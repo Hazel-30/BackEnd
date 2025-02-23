@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Posts</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Blog Posts</h1>
+        <a href="/add-post" class="btn">Add New Post</a>
+        
+        <div class="posts">
+            <% posts.forEach(post => { %>
+                <div class="post-card">
+                    <h2><%= post.title %></h2>
+                    <p class="meta">By <%= post.author %> on <%= post.date %></p>
+                    <p><%= post.content.substring(0, 150) %>...</p>
+                    <a href="/post?id=<%= post.id %>" class="btn">Read More</a>
+                </div>
+            <% }); %>
+        </div>
+    </div>
+</body>
+</html>

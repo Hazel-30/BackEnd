@@ -1,0 +1,18 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "First Blog ",
+      "content": " my first blog post.",
+      "author": "neha",
+      "date": "2025-02-22"
+    },
+    {
+      "id": 2,
+      "title": "2025",
+      "content": "happy new year",
+      "author": "hazel",
+      "date": "2025-02-22"
+    }
+  ]
+}
